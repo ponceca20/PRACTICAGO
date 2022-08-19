@@ -5,7 +5,7 @@ import (
 	"net/http"
 )
 
-func index(w http.ResponseWriter, r *http.Request) {
+func Index(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Hola mundo")
 	if r.Method != "GET" {
 		w.WriteHeader(http.StatusMethodNotAllowed)
@@ -15,9 +15,9 @@ func index(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Hola mundo get")
 
 }
-func getcontry(w http.ResponseWriter,_*http.Request) {
+func Getcontry(w http.ResponseWriter, _ *http.Request) {
 	fmt.Fprintf(w, "get contry get")
 }
-func addcontry(w http.ResponseWriter,_*http.Request) {
+func Addcontry(w http.ResponseWriter, _ *http.Request) {
 	fmt.Fprintf(w, "get contry post")
 }

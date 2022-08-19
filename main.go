@@ -1,8 +1,7 @@
 package main
 
-import (
-	"goprueba/server"
-)
+import "github.com/ponceca20/PRACTICAGO/server"
+
 func main() {
 
 	srv = server.New(":8080")

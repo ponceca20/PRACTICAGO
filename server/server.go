@@ -11,7 +11,7 @@ type country struct {
 var countries []*country
 
 func New(addr string) *http.Server {
-	initRoutes()
+	InitRoutes()
 	return &http.Server{
 		Addr: addr,
 	}

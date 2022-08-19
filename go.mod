@@ -1,3 +1,3 @@
-module github.com/ponceca20/api_rest
+module github.com/ponceca20/PRACTICAGO
 
 go 1.15

@@ -5,15 +5,15 @@ import (
 	"net/http"
 )
 
-func initRoutes() {
-	http.HandleFunc("/", index)
+func InitRoutes() {
+	http.HandleFunc("/", Index)
 
 	http.HandleFunc("/countries", func(w http.ResponseWriter, r *http.Request) {
 		switch r.Method {
 		case http.MethodGet:
-			getcontry(w, r)
+			Getcontry(w, r)
 		case http.MethodPost:
-			addcontry(w, r)
+			Addcontry(w, r)
 		default:
 			w.WriteHeader(http.StatusMethodNotAllowed)
 			fmt.Fprintf(w, "Solo se aceptan peticiones GET y POST")
