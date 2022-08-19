@@ -2,12 +2,15 @@ package main
 
 import "github.com/ponceca20/PRACTICAGO/server"
 
+// importa modulo http
+
 func main() {
 
-	srv = server.New(":8080")
+	srv := server.New(":8080")
 	//start the server whin control error
-	err := srv.ListenAndServe()
-	if err != nil {
-		panic(err)
+	error := srv.ListenAndServe()
+	if error != nil {
+		panic(error)
 	}
+
 }

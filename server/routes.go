@@ -5,6 +5,7 @@ import (
 	"net/http"
 )
 
+//rutas del servicio
 func InitRoutes() {
 	http.HandleFunc("/", Index)
 
